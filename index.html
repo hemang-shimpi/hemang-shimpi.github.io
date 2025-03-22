@@ -5,6 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemang Shimpi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #004466;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #002233;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #004466;
+            border-bottom: 2px solid #004466;
+            padding-bottom: 5px;
+        }
+        a {
+            color: #004466;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,48 +79,50 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Computer Science student at Georgia State University, passionate about software engineering, cloud computing, and machine learning.</p>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Bachelor of Science - Computer Science</strong> (May 2025) <br> Georgia State University</p>
-    </section>
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Python, Java, MySQL, React, Spring, REST API</li>
-            <li>Linux, Shell Scripting, PostgreSQL, MongoDB</li>
-            <li>Hadoop, Apache Spark, Jenkins, Git, Jira</li>
-        </ul>
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Software Engineering Intern - U.S. Bank (June 2024 – Aug 2024)</h3>
-        <ul>
-            <li>Developed and optimized CI/CD pipelines using Jenkins.</li>
-            <li>Led UAT deployments for the Converge Payment Application.</li>
-            <li>Implemented Infrastructure as Code (IaC) with AWS.</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>API Gateway Cache Clearing System</h3>
-        <ul>
-            <li>Automated cache clearing for POS payment applications using Akamai API.</li>
-            <li>Enhanced CI/CD pipeline efficiency with Ansible and AWS Cloud Automation.</li>
-        </ul>
-        <h3>Stock Price Predictor with ML</h3>
-        <ul>
-            <li>Built a stock price prediction model using Keras and Scikit-learn.</li>
-            <li>Developed an interactive visualization dashboard with Streamlit.</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:hemangshimpi@outlook.com">hemangshimpi@outlook.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/hemangshimpi">linkedin.com/in/hemangshimpi</a></p>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Computer Science student at Georgia State University, passionate about software engineering, cloud computing, and machine learning.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science - Computer Science</strong> (May 2025) <br> Georgia State University</p>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python, Java, MySQL, React, Spring, REST API</li>
+                <li>Linux, Shell Scripting, PostgreSQL, MongoDB</li>
+                <li>Hadoop, Apache Spark, Jenkins, Git, Jira</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Software Engineering Intern - U.S. Bank (June 2024 – Aug 2024)</h3>
+            <ul>
+                <li>Developed and optimized CI/CD pipelines using Jenkins.</li>
+                <li>Led UAT deployments for the Converge Payment Application.</li>
+                <li>Implemented Infrastructure as Code (IaC) with AWS.</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>API Gateway Cache Clearing System</h3>
+            <ul>
+                <li>Automated cache clearing for POS payment applications using Akamai API.</li>
+                <li>Enhanced CI/CD pipeline efficiency with Ansible and AWS Cloud Automation.</li>
+            </ul>
+            <h3>Stock Price Predictor with ML</h3>
+            <ul>
+                <li>Built a stock price prediction model using Keras and Scikit-learn.</li>
+                <li>Developed an interactive visualization dashboard with Streamlit.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:hemangshimpi@outlook.com">hemangshimpi@outlook.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/hemangshimpi">linkedin.com/in/hemangshimpi</a></p>
+        </section>
+    </div>
 </body>
 </html>
