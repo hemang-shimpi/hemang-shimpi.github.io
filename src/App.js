@@ -115,41 +115,114 @@ const App = () => {
         </div>
       </section>
       <div className="w-full border-t border-gray-300" />
-
-      {/* Projects Section */}
+      
       <section id="projects" data-aos="fade-up" className="bg-gray-100 text-black px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white rounded-xl shadow-md p-8 animate-fade-in transition-transform duration-300 hover:scale-105">
-            <h3 className="text-2xl font-bold mb-2">API Gateway Cache Clearing System</h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Built using Jenkins, AWS, and Akamai APIs. Automates cache clearing for POS payment apps with Shell scripting and Groovy.
-            </p>
-            <div className="flex flex-wrap gap-4 mt-4">
-              <button className="btn" type="button">
-                Demo
-              </button>
-              <a className="btn-outline" href="https://github.com/hemang-shimpi">
-                GitHub
-              </a>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          {/* Project - Bearhood */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
+            <img src="/assets/bearhood demo.png" alt="bearhood demo" className="w-full h-42 object-cover" />
+            <div className="p-8 flex flex-col justify-center">
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
+                <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python" />
+                <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=flat-square" alt="Firebase" />
+                <img src="https://img.shields.io/badge/Azure-0078D4?logo=azure-devops&logoColor=white&style=flat-square" alt="Azure" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Bearhood – Paper Trading Platform</h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Full-stack trading simulation app that mimics stock trades using real-time data. Built with <b>React</b>, <b>Python WebSockets</b>, and deployed via <b>Azure</b>.
+              </p>
+              <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-4">
+                <li>Over 95% login success rate using Firebase Authentication</li>
+                <li>Optimized API usage with server-side caching for live stock data</li>
+                <li>Designed trading UIs and portfolio dashboards for usability</li>
+              </ul>
+              <div className="flex gap-3">
+                <a href="https://github.com/hemang-shimpi/PaperTradingApp" target="_blank" rel="noopener noreferrer" className="border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-gray-100 text-sm flex items-center gap-2">
+                  <FaGithub /> GitHub
+                </a>
+              </div>
             </div>
           </div>
-          <div className="bg-white rounded-xl shadow-md p-8 animate-fade-in delay-100 transition-transform duration-300 hover:scale-105">
+
+          {/* Project - Chatbot */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
+            <img src="/assets/chatbot cover.png" alt="chatbot demo" className="w-full h-52 object-cover" />
+            <div className="p-8 flex flex-col justify-center">
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
+                <img src="https://img.shields.io/badge/LangChain-000?logo=python&logoColor=white&style=flat-square" alt="LangChain" />
+                <img src="https://img.shields.io/badge/Gemini-4285F4?logo=google&logoColor=white&style=flat-square" alt="Gemini" />
+                <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white&style=flat-square" alt="Kubernetes" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Graduate School AI Chatbot</h3>
+              <p className="text-sm text-gray-600 mb-3">
+                AI-powered chatbot using <b>React</b>, <b>LangChain</b>, <b>Google Gemini</b>, <b>ChromaDB</b>, and <b>Kubernetes</b>. Handles multi-session context-aware queries.
+              </p>
+              <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-4">
+                <li>Supports multiple concurrent queries with context preservation</li>
+                <li>Tested with Postman; deployed using Uvicorn + Docker</li>
+              </ul>
+              <div className="flex gap-3">
+                <a href="http://askpounce.me/" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 text-sm">
+                  🎯 Live
+                </a>
+                <a href="https://github.com/hemang-shimpi/Graduate-AI-Chatbot" target="_blank" rel="noopener noreferrer" className="border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-gray-100 text-sm flex items-center gap-2">
+                  <FaGithub /> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project - E-Commerce Catalog */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-8 flex flex-col justify-center">
+            <div className="flex flex-wrap items-center gap-2 mb-3">
+              <img src="https://img.shields.io/badge/SpringBoot-6DB33F?logo=springboot&logoColor=white&style=flat-square" alt="Spring Boot" />
+              <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
+              <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat-square" alt="PostgreSQL" />
+              <img src="https://img.shields.io/badge/JWT-FB542B?logo=jsonwebtokens&logoColor=white&style=flat-square" alt="JWT" />
+              <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square" alt="Docker" />
+            </div>
             <h3 className="text-2xl font-bold mb-2">E-Commerce Product Catalog</h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Spring Boot backend with React.js frontend, PostgreSQL database, Spring Security + JWT, and deployed with Docker.
+            <p className="text-sm text-gray-600 mb-3">
+              Full-stack catalog with <b>Spring Boot</b> backend, <b>React</b> frontend, <b>PostgreSQL</b>, <b>JWT Auth</b>, and deployed using <b>Docker</b>.
             </p>
-            <div className="flex flex-wrap gap-4 mt-4">
-              <button className="btn" type="button">
-                Live
-              </button>
-              <a className="btn-outline" href="https://github.com/hemang-shimpi">
-                GitHub
+            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-4">
+              <li>Secure login and role-based access using JWT + Spring Security</li>
+              <li>Product management dashboard and category filters</li>
+            </ul>
+            <div className="flex gap-3">
+              <a href="https://github.com/hemang-shimpi/ecommerce-product-catalog" target="_blank" rel="noopener noreferrer" className="border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-gray-100 text-sm flex items-center gap-2">
+                <FaGithub /> GitHub
               </a>
             </div>
           </div>
+
+          {/* Project - API Gateway Cache */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-8 flex flex-col justify-center">
+            <div className="flex flex-wrap items-center gap-2 mb-3">
+              <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white&style=flat-square" alt="Jenkins" />
+              <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white&style=flat-square" alt="AWS" />
+              <img src="https://img.shields.io/badge/Akamai-009DDC?style=flat-square" alt="Akamai" />
+              <img src="https://img.shields.io/badge/Shell-89E051?logo=gnu-bash&logoColor=black&style=flat-square" alt="Shell" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">API Gateway Cache Clearing System</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              Automated Akamai cache clearing using <b>Jenkins Pipelines</b>, <b>AWS</b>, and <b>Shell scripting</b> to minimize latency for POS payment apps.
+            </p>
+            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-2">
+              <li>Reduced manual deployment delays by 70%</li>
+              <li>Modular Groovy stages dynamically trigger Akamai purge requests</li>
+            </ul>
+            <p className="semi-bold text-sm text-gray-400 text-left mt-2">U.S. Bank Project</p>
+          </div>
+
         </div>
       </section>
+
+
       <div className="w-full border-t border-gray-300" />
 
       {/* Skills Section */}
@@ -191,9 +264,18 @@ const App = () => {
               <h3 className="text-lg font-semibold">Software Engineering Intern @ U.S. Bank</h3>
               <p className="text-sm text-gray-500">June 2024 – August 2024 · Atlanta, GA</p>
               <ul className="list-disc pr-4 mt-2 text-sm text-gray-700">
-                <li>Optimized CI/CD pipelines with Jenkins.</li>
-                <li>Led UAT deployments for Converge Payment App.</li>
-                <li>Automated AWS provisioning using Infrastructure as Code.</li>
+                <li>Supported merchant payment processing systems by maintaining and improving the Converge Payment
+                Application, contributing to the stability of a platform that processes thousands of secure transactions daily.</li>
+                <li>Led and executed UAT deployments for feature releases, improving QA throughput and reducing
+                environment-related failures by 40% through version control automation and pre-deployment checks.</li>
+                <li>Automated Akamai cache clearing using RESTful API scripts and Linux shell scripting, reducing deployment
+                delays by 70% and ensuring real-time merchant platform availability.</li>
+                <li>Strengthened application security by identifying and patching authentication vulnerabilities in TestRail and
+                Confluence, enabling direct AWS-based authentication, and resolving 100% of the flagged issues during audits.</li>
+                <li>Streamlined CI/CD pipelines using Jenkins and GitLab, cutting average deployment time by 25% and enabling
+                more frequent and reliable code releases.</li>
+                <li>Participated in Agile ceremonies including sprint planning, daily stand-ups, and retrospectives, consistently
+                delivering updates and collaborating with cross-functional DevOps and QA teams.</li>
               </ul>
             </div>
             <div className="w-2/12 flex justify-center items-center">
@@ -210,7 +292,7 @@ const App = () => {
               <h3 className="text-lg font-semibold">B.S. in Computer Science</h3>
               <p className="text-sm text-gray-500">Georgia State University · May 2025</p>
               <ul className="list-disc pl-4 mt-2 text-sm text-gray-700">
-                <li>Relevant Coursework: Cloud, AI, Data Structures, Mobile Dev</li>
+                <li>Relevant Coursework: Software Development, Web Development, Cloud Computing, Artificial Intelligence, Data Structures, System Level Programming, Mobile App Development</li>
                 <li>Dean’s List & President’s List (2024)</li>
                 <li>PantherWeb & CS Club Member + Mentor</li>
               </ul>
