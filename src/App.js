@@ -29,7 +29,7 @@ const App = () => {
     <div className="font-sans text-black bg-white m-0 p-0">
       {/* Navigation */}
       <nav className="fixed top-4 w-full z-50 flex justify-center px-2">
-        <div className="bg-gray-300 flex flex-wrap justify-center items-center gap-2 sm:gap-4 px-4 py-2 rounded-full shadow-lg text-sm sm:text-base">
+  <div className="bg-gray-300/80 backdrop-blur-sm flex flex-wrap justify-center items-center gap-2 sm:gap-4 px-4 py-2 rounded-full shadow-lg text-sm sm:text-base">
           {navItems.map((item) => (
             <button
               key={item}
@@ -51,7 +51,7 @@ const App = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative text-center px-6 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden h-[500px] flex flex-col justify-center"
+        className="relative text-center px-6 pt-28 sm:pt-0 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden h-[500px] flex flex-col justify-center"
       >
         <Particles
           id="tsparticles"
