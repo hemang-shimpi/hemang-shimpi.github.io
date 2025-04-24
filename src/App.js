@@ -50,66 +50,87 @@ const App = () => {
 
       {/* Hero Section */}
       <section
-        id="home"
-        className="relative text-center px-6 pt-28 sm:pt-0 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden h-[500px] flex flex-col justify-center"
+  id="home"
+  className="relative text-center px-4 sm:px-6 pt-36 sm:pt-24 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden"
+>
+  <Particles
+    id="tsparticles"
+    init={particlesInit}
+    className="absolute top-0 left-0 right-0 h-full z-0"
+    options={{
+      background: { color: { value: 'transparent' } },
+      fpsLimit: 60,
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: ['repulse', 'connect'] },
+          onClick: { enable: false },
+          resize: true,
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          connect: { distance: 120, radius: 60, links: { opacity: 0.5 } },
+        },
+      },
+      particles: {
+        color: { value: '#ffffff' },
+        links: { color: '#ffffff', distance: 150, enable: true, opacity: 0.2, width: 1 },
+        move: { enable: true, speed: 2, outModes: 'bounce' },
+        number: { value: 50, density: { enable: true, area: 800 } },
+        opacity: { value: 0.5 },
+        shape: { type: 'circle' },
+        size: { value: { min: 1, max: 4 } },
+      },
+      detectRetina: true,
+    }}
+  />
+
+  <div className="relative z-10 pb-12">
+    <a href="https://github.com/hemang-shimpi" target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://github.com/hemang-shimpi.png"
+        alt="Hemang"
+        className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white transition-transform duration-300 hover:scale-110"
+      />
+    </a>
+    <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white animate-fade-in">
+      Hello, I'm Hemang 👋
+    </h1>
+    <p className="text-base sm:text-xl font-light max-w-2xl mx-auto text-white animate-fade-in delay-100">
+      I'm a full stack software engineer and computer science student at Georgia State University.
+    </p>
+    <div className="mt-6 flex flex-wrap justify-center gap-4 animate-fade-in delay-200">
+      <a
+        href="https://github.com/hemang-shimpi"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn flex items-center gap-2"
+        title="GitHub"
       >
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          className="absolute top-0 left-0 right-0 h-full z-0"
-          options={{
-            background: { color: { value: 'transparent' } },
-            fpsLimit: 60,
-            interactivity: {
-              events: {
-                onHover: { enable: true, mode: ['repulse', 'connect'] },
-                onClick: { enable: false },
-                resize: true,
-              },
-              modes: {
-                repulse: { distance: 100, duration: 0.4 },
-                connect: { distance: 120, radius: 60, links: { opacity: 0.5 } },
-              },
-            },
-            particles: {
-              color: { value: '#ffffff' },
-              links: { color: '#ffffff', distance: 150, enable: true, opacity: 0.2, width: 1 },
-              move: { enable: true, speed: 2, outModes: 'bounce' },
-              number: { value: 50, density: { enable: true, area: 800 } },
-              opacity: { value: 0.5 },
-              shape: { type: 'circle' },
-              size: { value: { min: 1, max: 4 } },
-            },
-            detectRetina: true,
-          }}
-        />
-        <div className="relative z-10">
-          <a href="https://github.com/hemang-shimpi" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://github.com/hemang-shimpi.png"
-              alt="Hemang"
-              className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white transition-transform duration-300 hover:scale-110"
-            />
-          </a>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-white animate-fade-in">
-            Hello, I'm Hemang 👋
-          </h1>
-          <p className="text-lg sm:text-xl font-light max-w-2xl mx-auto text-white animate-fade-in delay-100">
-            I'm a full stack software engineer and computer science student at Georgia State University.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-4 animate-fade-in delay-200">
-            <a href="https://github.com/hemang-shimpi" target="_blank" rel="noopener noreferrer" className="btn flex items-center gap-2" title="GitHub">
-              <FaGithub /> GitHub
-            </a>
-            <a href="https://linkedin.com/in/hemangshimpi" target="_blank" rel="noopener noreferrer" className="btn flex items-center gap-2" title="LinkedIn">
-              <FaLinkedin /> LinkedIn
-            </a>
-            <a href="mailto:hemangshimpi@outlook.com" target="_blank" rel="noopener noreferrer" className="btn flex items-center gap-2" title="Email">
-              <FaEnvelope /> Email
-            </a>
-          </div>
-        </div>
-      </section>
+        <FaGithub /> GitHub
+      </a>
+      <a
+        href="https://linkedin.com/in/hemangshimpi"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn flex items-center gap-2"
+        title="LinkedIn"
+      >
+        <FaLinkedin /> LinkedIn
+      </a>
+      <a
+        href="mailto:hemangshimpi@outlook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn flex items-center gap-2"
+        title="Email"
+      >
+        <FaEnvelope /> Email
+      </a>
+    </div>
+  </div>
+</section>
+
+
       <div className="w-full border-t border-gray-300" />
 
       <section id="projects" data-aos="fade-up" className="bg-gray-100 text-black px-4 sm:px-6 py-16">
