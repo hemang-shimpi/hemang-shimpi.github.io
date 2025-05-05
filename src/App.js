@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
+import { TypeAnimation } from 'react-type-animation';
 import './index.css';
 
 const App = () => {
@@ -86,18 +87,25 @@ const App = () => {
 
   <div className="relative z-10 pb-12">
     <a href="https://github.com/hemang-shimpi" target="_blank" rel="noopener noreferrer">
-      <img
-        src="https://github.com/hemang-shimpi.png"
-        alt="Hemang"
-        className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white transition-transform duration-300 hover:scale-110"
-      />
+    <img
+  src="https://github.com/hemang-shimpi.png"
+  alt="Hemang"
+  loading="lazy"
+  className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white transition-transform duration-300 hover:scale-110"
+/>
+
     </a>
-    <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white animate-fade-in">
-      Hello, I'm Hemang 👋
-    </h1>
-    <p className="text-base sm:text-xl font-light max-w-2xl mx-auto text-white animate-fade-in delay-100">
-      I'm a full stack software engineer and computer science student at Georgia State University.
-    </p>
+    <h1
+  className="text-3xl sm:text-5xl font-bold mb-4 text-white animate-fade-in animate-delay-[200ms]"
+>
+  Hello, I'm Hemang 👋
+</h1>
+<p
+  className="text-base sm:text-xl font-light max-w-2xl mx-auto text-white animate-fade-in animate-delay-[400ms]"
+>
+  I'm a full stack software engineer and computer science student <p></p> at Georgia State University.
+</p>
+
     <div className="mt-6 flex flex-wrap justify-center gap-4 animate-fade-in delay-200">
       <a
         href="https://github.com/hemang-shimpi"
@@ -127,8 +135,11 @@ const App = () => {
         <FaEnvelope /> Email
       </a>
     </div>
+    
   </div>
 </section>
+
+
 
 
       <div className="w-full border-t border-gray-300" />
@@ -237,6 +248,76 @@ const App = () => {
       <p className="text-sm text-gray-400">U.S. Bank Project</p>
     </div>
 
+    {/* Project - Enterprise Payment Processing System */}
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col p-6">
+      <div className="flex flex-wrap items-center gap-2 mb-3">
+        <img src="https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white&style=flat-square" alt="Java" />
+        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?logo=springboot&logoColor=white&style=flat-square" alt="Spring Boot" />
+        <img src="https://img.shields.io/badge/SQLServer-CC2927?logo=microsoftsqlserver&logoColor=white&style=flat-square" alt="SQL Server" />
+        <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white&style=flat-square" alt="Jenkins" />
+      </div>
+      <h3 className="text-xl font-bold mb-2">Enterprise Payment Processing System</h3>
+      <p className="text-sm text-gray-600 mb-3">
+        High-performance payment processing solution built with <b>Java</b>, <b>Spring Boot</b>, and <b>SQL Server</b> for secure, seamless transactions.
+      </p>
+      <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-2">
+        <li>Developed scalable microservices architecture.</li>
+        <li>Implemented automated testing (JUnit, Selenium) and CI/CD (Jenkins).</li>
+      </ul>
+    </div>
+
+    {/* Project - Inventory Management Platform */}
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col p-6">
+      <div className="flex flex-wrap items-center gap-2 mb-3">
+        <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
+        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?logo=springboot&logoColor=white&style=flat-square" alt="Spring Boot" />
+        <img src="https://img.shields.io/badge/Selenium-43B02A?logo=selenium&logoColor=white&style=flat-square" alt="Selenium" />
+      </div>
+      <h3 className="text-xl font-bold mb-2">Inventory Management Platform</h3>
+      <p className="text-sm text-gray-600 mb-3">
+        Real-time inventory tracking system created with <b>React.js</b> and <b>Java Spring Boot</b>.
+      </p>
+      <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-2">
+        <li>Enhanced reliability with Selenium and API testing.</li>
+        <li>Optimized for performance and operational efficiency.</li>
+      </ul>
+    </div>
+
+    {/* Project - Customer Engagement & Analytics Dashboard */}
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col p-6">
+      <div className="flex flex-wrap items-center gap-2 mb-3">
+        <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
+        <img src="https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white&style=flat-square" alt="Java" />
+        <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat-square" alt="PostgreSQL" />
+      </div>
+      <h3 className="text-xl font-bold mb-2">Customer Engagement & Analytics Dashboard</h3>
+      <p className="text-sm text-gray-600 mb-3">
+        Data analytics platform built using <b>React.js</b>, <b>Java</b>, and <b>PostgreSQL</b> for customer interaction insights.
+      </p>
+      <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-2">
+        <li>Implemented RESTful APIs for data handling.</li>
+        <li>Leveraged Agile practices and automation for stability.</li>
+      </ul>
+    </div>
+
+    {/* Project - Real-time Data Processing & Visualization */}
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col p-6">
+      <div className="flex flex-wrap items-center gap-2 mb-3">
+        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python" />
+        <img src="https://img.shields.io/badge/ApacheKafka-231F20?logo=apachekafka&logoColor=white&style=flat-square" alt="Apache Kafka" />
+        <img src="https://img.shields.io/badge/D3.js-F9A03C?logo=d3.js&logoColor=white&style=flat-square" alt="D3.js" />
+      </div>
+      <h3 className="text-xl font-bold mb-2">Real-time Data Processing & Visualization Platform</h3>
+      <p className="text-sm text-gray-600 mb-3">
+        Live data visualization solution using <b>Python</b>, <b>Apache Kafka</b>, and <b>D3.js</b>.
+      </p>
+      <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 mb-2">
+        <li>Developed fault-tolerant real-time data pipelines.</li>
+        <li>Dynamic dashboards for enhanced decision-making.</li>
+      </ul>
+    </div>
+
+
   </div>
 </section>
 
@@ -257,7 +338,13 @@ const App = () => {
             'Jenkins',
             'GitLab',
             'Docker',
-            'Linux',
+            'Bash',
+            'Selenium',
+            'Kafka',
+            'Dart',
+            'Flutter',
+            'Git'
+            
           ].map((skill) => (
             <div key={skill} className="text-center transition-transform duration-300 hover:-translate-y-2">
               <img
@@ -285,18 +372,9 @@ const App = () => {
               <h3 className="text-lg font-semibold">Software Engineering Intern @ U.S. Bank</h3>
               <p className="text-sm text-gray-500">June 2024 – August 2024 · Atlanta, GA</p>
               <ul className="list-disc pl-4 mt-2 text-sm text-gray-700">
-              <li>Supported merchant payment processing systems by maintaining and improving the Converge Payment
-                Application, contributing to the stability of a platform that processes thousands of secure transactions daily.</li>
-                <li>Led and executed UAT deployments for feature releases, improving QA throughput and reducing
-                environment-related failures by 40% through version control automation and pre-deployment checks.</li>
-                <li>Automated Akamai cache clearing using RESTful API scripts and Linux shell scripting, reducing deployment
-                delays by 70% and ensuring real-time merchant platform availability.</li>
-                <li>Strengthened application security by identifying and patching authentication vulnerabilities in TestRail and
-                Confluence, enabling direct AWS-based authentication, and resolving 100% of the flagged issues during audits.</li>
-                <li>Streamlined CI/CD pipelines using Jenkins and GitLab, cutting average deployment time by 25% and enabling
-                more frequent and reliable code releases.</li>
-                <li>Participated in Agile ceremonies including sprint planning, daily stand-ups, and retrospectives, consistently
-                delivering updates and collaborating with cross-functional DevOps and QA teams.</li>
+              <li>Designed and developed scalable microservices-based solutions in Java and Spring, improving application performance and reliability by 35%.</li>
+              <li>Constructed and managed REST API services for both internal and external consumers, enhancing data integration efficiency by 40%.</li>
+              <li>Led best practice initiatives, including automated unit testing, CI/CD pipeline enhancements, and Agile process improvements, accelerating deployment cycles by 25%.</li>
               </ul>
             </div>
             <div className="w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow my-6 md:my-0"></div>
